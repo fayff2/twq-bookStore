@@ -4,6 +4,9 @@ import './App.css'
 import Books from './pages/Books';
 import BookDetails from './pages/BookDetails';
 import NotFound from './pages/NotFound';
+import Register from './pages/Register';
+import Login from './pages/Login';
+
 
 function App() {
  
@@ -12,7 +15,8 @@ function App() {
     <>
     <Routes>
 
-<Route path='/' element={<Home/>}></Route>
+    <Route path='/' element={<Register/>}></Route>
+<Route path='/login' element={<Login/>}></Route>
 
 
 <Route path='/home'>
@@ -24,6 +28,9 @@ function App() {
 
 
 <Route path='*' element={<NotFound/>}></Route>
+
+
+
     </Routes>
      
     </>
